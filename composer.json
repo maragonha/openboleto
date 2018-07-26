@@ -1,9 +1,9 @@
 {
-    "name": "MichaelAcost/openboleto",
+    "name": "michaelacost/openboleto",
     "type": "library",
     "description": "Biblioteca para geração de boletos bancários.",
     "keywords": ["boleto", "boleto bancario"],
-    "homepage": "https://github.com/MichaelAcost/openboleto",
+    "homepage": "https://github.com/michaelacost/openboleto",
     "license": "MIT",
     "authors": [
         {
