@@ -68,6 +68,10 @@ class Agente
      */
     protected $documento;
 
+    protected $numero;
+
+    protected $complemento;
+
     /**
      * Construtor
      *
@@ -78,14 +82,27 @@ class Agente
      * @param string $cidade
      * @param string $uf
      */
-    public function __construct($nome, $documento, $endereco = null, $cep = null, $cidade = null, $uf = null)
+    public function __construct(
+        $nome,
+        $documento,
+        $endereco = null,
+        $numero = null,
+        $complemento = null,
+        $bairro = null,
+        $cep = null,
+        $cidade = null,
+        $uf = null
+    )
     {
         $this->setNome($nome);
         $this->setDocumento($documento);
         $endereco and $this->setEndereco($endereco);
+        $bairro and $this->setBairro($bairro);
         $cep and $this->setCep($cep);
         $cidade and $this->setCidade($cidade);
         $uf and $this->setUf($uf);
+        $numero and $this->setNumero($numero);
+        $complemento and $this->setComplemento($complemento);
     }
 
     /**
@@ -97,15 +114,46 @@ class Agente
     {
         $this->cep = $cep;
     }
+    public function getCep()
+    {
+        return $this->cep;
+    }
+
+    public function setBairro($bairro)
+    {
+        $this->bairro = $bairro;
+    }
+    public function getBairro()
+    {
+        return $this->bairro;
+    }
+
+
+
+    public function setNumero($numero)
+    {
+        $this->numero = $numero;
+    }
+
+    public function setComplemento($complemento)
+    {
+        $this->complemento = $complemento;
+    }
 
     /**
      * Retorna o CEP
      *
      * @return string
      */
-    public function getCep()
+
+    public function getNumero()
     {
-        return $this->cep;
+        return $this->numero;
+    }
+
+    public function getComplemento()
+    {
+        return $this->complemento;
     }
 
     /**
