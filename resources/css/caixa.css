@@ -1,0 +1,869 @@
+/* ESTILOS SEPARADOS PELA มREA */
+/*จจจจจจจจจจจจจจจจจจจจจจจจจจจจจ*/
+
+
+
+/* ------- INPUTS E FORMULมRIOS ------- */
+.SelectTopo {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	COLOR: #5F5F5F;
+	margin: 0px;
+	padding: 0px;
+	height: 17px;
+	width: 151px;
+	background-COLOR: #CECECE;
+	}
+
+
+
+/* ------- CABECALHO ------- */
+.CabecalhoNome {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	COLOR: #333333;
+	background: #41A4D0;
+	}
+	
+.DetalheNome {
+	COLOR: #41A4D0;
+	background: #41A4D0;
+	}
+
+
+
+/* ------- CSS DO MENU ------- */
+.MenuItemBold {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	COLOR: #333333;
+	font-weight: bold;
+	text-decoration:none;
+	}
+	
+A.MenuItemBold:link {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	COLOR: #333333;
+	font-weight: bold;
+	text-decoration:none;
+	}
+	
+A.MenuItemBold:visited {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	COLOR: #333333;
+	font-weight: bold;
+	text-decoration:none;
+	}
+
+A.MenuItemBold:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	COLOR: #333333;
+	font-weight: bold;
+	text-decoration:none;
+	}
+
+.MenuItemInterno {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	COLOR: #333333;
+	TEXT-DECORATION: none;
+	}
+	
+A.MenuItemInterno:hover { 
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	COLOR: #333333;
+	TEXT-DECORATION: underline;
+	}
+
+
+
+/* ------- CSS DE LINK ------- */
+.ConteudoTxtInfo{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	COLOR: #666666;
+	}
+	
+a.ConteudoTxtLink:link{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	COLOR: #666666;
+	TEXT-DECORATION: none;
+	}
+
+a.ConteudoTxtLink:visited{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	COLOR: #666666;
+	TEXT-DECORATION: none;
+	}
+
+a.ConteudoTxtLink:hover{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	COLOR: #666666;
+	TEXT-DECORATION: underline;
+	}
+		
+	
+/* ------- CSS DO CONTEUDO ------- */
+.ConteudoTxtBoasVindas {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	COLOR: #666666;
+	}
+	
+.ConteudoTxtAvisoNavegacao {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	COLOR: #666666;
+	}
+	
+.ConteudoTxt {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	COLOR: #333333;
+	}
+	
+.ConteudoTxtBold {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	COLOR: #333333;
+	font-weight: bold;
+	}
+
+.ConteudoTxtTituloBold {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	COLOR: #666666;
+	font-weight: bold;
+	TEXT-DECORATION: none;
+	}
+
+.ConteudoTxtTituloBold2 { 
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #0E3674;
+	font-weight: bold;
+}
+	
+A.ConteudoTxtTituloBold:Hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	COLOR: #666666;
+	font-weight: bold;
+	TEXT-DECORATION: underline;
+}
+
+.texto {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+}
+.textobold {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	font-weight: bold;
+
+}
+.cantoclaroinfesq {
+	background-attachment: fixed;
+	background-image:    url(../_images/dlt_canto_cbd9e1_ie.gif);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	background-color: #CBD9E1;
+
+}
+.cantoclaroinfdir {
+	background-attachment: fixed;
+	background-image:    url(../_images/dlt_canto_cbd9e1_id.gif);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-color: #CBD9E1;
+
+}
+
+.cantoclarosupdir {
+
+	background-attachment: fixed;
+	background-image:    url(../_images/dlt_canto_cbd9e1_sd.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-color: #CBD9E1;
+}
+.cantoclarosupesq {
+
+
+	background-attachment: fixed;
+	background-image:    url(../_images/dlt_canto_cbd9e1_se.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-color: #CBD9E1;
+}
+
+.ConteudoTxtTituloTbl {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	COLOR: #FFFFFF;
+	
+	}
+	
+.ConteudoTxtConteudoCampoTbl {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	COLOR: #666666;
+	background: #F6F6F6;
+	}
+	
+.ConteudoSelect {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	COLOR: #333333;
+	margin: 0px;
+	padding: 0px;
+	background-COLOR: #CECECE;
+	}
+
+.ConteudoTxtSubtituloBold {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	COLOR: #227EA5;
+	font-weight: bold;
+}
+
+.ConteudoTxtInfoBold {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	COLOR: #666666;
+	background-color: #F6F6F6;
+
+}
+
+.ConteudoTxtInfo {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	COLOR: #666666;
+	background-color: #F6F6F6;
+
+}
+
+
+
+/* ------- CSS DA CAIXA ------- */
+.BoxClaraTxt {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	COLOR: #333333;
+	background-color: #CBD9E1;
+	}
+	
+.BoxClaraTxtBold {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	COLOR: #333333;
+	background-color: #CBD9E1;
+	}
+
+
+/* ------- IMAGENS DOS CANTOS ------- */
+.CantoClaroInfEsq {
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	background-image: url(../_images/dtlCantoBoxClaroEI.gif);
+	background-color: #CBD9E1;
+
+
+}.ConteudoTxtAviso {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	COLOR: #0E3674;
+	font-weight: bold;
+}
+.CantoClaroInfDir {
+	background-image:     url(../_images/dtlCantoBoxClaroDI.gif);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-COLOR: #CBD9E1;
+}
+
+/* ------- BOLETO ------- */
+.fa7p {
+	FONT-SIZE: 7pt;
+	COLOR: #000000;
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+}
+.fa11p {
+	FONT-SIZE: 11pt;
+	COLOR: #000000;
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+.txtazul {
+	FONT-SIZE: 8pt;
+	COLOR: #005baa;
+	FONT-FAMILY: Verdana;
+}
+.fa10pbold {
+	FONT-SIZE: 10pt;
+	COLOR: #000000;
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+.fa11pbold {
+	FONT-SIZE: 11pt;
+	COLOR: #000000;
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+.nohscroll {  overflow-x : hidden
+}
+.nomeusuario
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 11px;
+    COLOR: #333333;
+    FONT-FAMILY: Verdana, Arial
+}
+.cpfusuario
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    COLOR: #333333;
+    FONT-FAMILY: Verdana, Arial
+}
+.selectatendimento {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #5F5F5F;
+	background-color: #CECECE;
+	margin: 0px;
+	padding: 0px;
+	height: 17px;
+}
+.selectnavegue {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: 5F5F5F;
+	margin: 0px;
+	padding: 0px;
+	height: 17px;
+	background-color: #CECECE;
+}
+.select {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: 5F5F5F;
+	margin: 0px;
+	padding: 0px;
+	height: 17px;
+	background-color: #CECECE;
+}
+
+.input {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+	margin: 0px;
+	padding: 0px;
+	height: 17px;
+	background-color: #CECECE;
+}
+
+.txtmenu {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration:none;
+
+}
+.titcampo {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666666;
+	background-color: #F6F6F6;
+
+}
+.subtitulo {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #227EA5;
+}
+.titcampobold {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666666;
+	font-weight: bold;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-color: #F6F6F6;
+}
+
+A.linkpbold:link { 
+		COLOR: #000000; 
+		TEXT-DECORATION: none;
+		font-size: 11px;
+		font-weight: bold;
+		font-family: Verdana, Arial, Helvetica, sans-serif;}
+
+A.linkpbold:visited { 
+		COLOR: #000000; 
+		TEXT-DECORATION: none;
+		font-size: 11px;
+		font-weight: bold;
+		font-family: Verdana, Arial, Helvetica, sans-serif;}
+A.linkbold:hover { 
+		COLOR: #000000; 
+		TEXT-DECORATION: underline;
+		font-size: 11px;
+		font-weight: bold;
+		font-family: Verdana, Arial, Helvetica, sans-serif;}
+
+A.linkp:link { 
+		COLOR: #000000; 
+		TEXT-DECORATION: none;
+		font-size: 11px;
+		font-family: Verdana, Arial, Helvetica, sans-serif;}
+
+A.linkp:visited { 
+		COLOR: #000000; 
+		TEXT-DECORATION: none;
+		font-size: 11px;
+		font-family: Verdana, Arial, Helvetica, sans-serif;}
+A.linkp:hover { 
+		COLOR: #000000; 
+		TEXT-DECORATION: underline;
+		font-size: 11px;
+		font-family: Verdana, Arial, Helvetica, sans-serif;}
+
+A.linkczbold12 { 
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #0E3674;
+	font-weight: bold;
+}
+
+
+A.linkczbold:link { 
+		COLOR: #666666; 
+		TEXT-DECORATION: none;
+		font-size: 11px;
+		font-weight: bold;
+		font-family: Verdana, Arial, Helvetica, sans-serif;}
+
+A.linkczbold:visited { 
+		COLOR: #666666; 
+		TEXT-DECORATION: none;
+		font-size: 11px;
+		font-weight: bold;
+		font-family: Verdana, Arial, Helvetica, sans-serif;}
+A.linkczbold:hover { 
+		COLOR: #666666; 
+		TEXT-DECORATION: underline;
+		font-size: 11px;
+		font-weight: bold;
+		font-family: Verdana, Arial, Helvetica, sans-serif;}
+
+A.linkcz:link { 
+		COLOR: #666666; 
+		TEXT-DECORATION: none;
+		font-size: 11px;
+		font-family: Verdana, Arial, Helvetica, sans-serif;}
+
+A.linkcz:visited { 
+		COLOR: #666666; 
+		TEXT-DECORATION: none;
+		font-size: 11px;
+		font-family: Verdana, Arial, Helvetica, sans-serif;}
+A.linkcz:hover { 
+		COLOR: #666666; 
+		TEXT-DECORATION: underline;
+		font-size: 11px;
+		font-family: Verdana, Arial, Helvetica, sans-serif;}
+
+.texto {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+}
+.textobold {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	font-weight: bold;
+
+}
+.textocabecalho {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+}
+.textocabecalhobold {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	font-weight: bold;
+}
+.fundopontilhado {
+	background-attachment: fixed;
+	background-image: url(../_images/pontilhado_net_branco.gif);
+	background-repeat: repeat-x;
+	background-position: center;
+}
+.tittabela {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	font-weight: bold;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.textoconfirmacao {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #0E3674;
+	font-weight: bold;
+}
+.cantoescurosupesq {
+	background-attachment: fixed;
+	background-image:     url(../_images/dlt_canto_7d9fb4_se.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-color: #7D9FB4;
+
+
+}
+.cantoescurosupdir {
+	background-attachment: fixed;
+	background-image:     url(../_images/dlt_canto_7d9fb4_sd.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-color: #7D9FB4;
+
+}
+.cantoescuroinfesq {
+	background-attachment: fixed;
+	background-image:     url(../_images/dlt_canto_7d9fb4_ie.gif);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	background-color: #7D9FB4;
+
+
+}
+.cantoescuroinfdir {
+	background-attachment: fixed;
+	background-image:     url(../_images/dlt_canto_7d9fb4_id.gif);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-color: #7D9FB4;
+
+}
+.cantoclaroinfesq {
+	background-attachment: fixed;
+	background-image:    url(../_images/dlt_canto_cbd9e1_ie.gif);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	background-color: #CBD9E1;
+
+}
+.cantoclaroinfdir {
+	background-attachment: fixed;
+	background-image:    url(../_images/dlt_canto_cbd9e1_id.gif);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-color: #CBD9E1;
+
+}
+.cantoclarosupdir {
+
+	background-attachment: fixed;
+	background-image:    url(../_images/dlt_canto_cbd9e1_sd.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-color: #CBD9E1;
+}
+.cantoclarosupesq {
+
+
+	background-attachment: fixed;
+	background-image:    url(../_images/dlt_canto_cbd9e1_se.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-color: #CBD9E1;
+}
+
+.level1 {  font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: normal}
+.level2 {  font-family: Arial, Helvetica, sans-serif; font-size: 10px; clip:   rect(   )}
+a.menu:link {  color: #990000; text-decoration: underline}
+a.menu:hover {  color: #0000FF; text-decoration: none}
+a.menu:active {  color: #FF0000; text-decoration: none}
+a.menu:visited {  color: #666666}
+.paginacao {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666666;
+	font-weight: bold;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.textarea {
+
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+	margin: 0px;
+	padding: 0px;
+	background-color: #CECECE;
+}
+.titcamposemfundo {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666666;
+}
+.titcampo2 {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666666;
+	background-color: #CBD9E1;
+}
+.titcampobold2 {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666666;
+	font-weight: bold;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-color: #CBD9E1;
+}
+.textoconfirmacaosembold {
+
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #0E3674;
+	font-weight: normal;
+}
+
+
+.fv8lr {  
+
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    color: #F37022; 
+    font-size: 8pt
+}
+.dadocli
+{
+    FONT-SIZE: 11px;
+    COLOR: black;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #cbd9e1;
+    TEXT-DECORATION: none
+}
+.dadoclibold
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    COLOR: black;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #cbd9e1;
+    TEXT-DECORATION: none
+}
+
+#mnuLadDiv
+{
+    WIDTH: 140px;
+    TEXT-ALIGN: left
+}
+#mnuLadDiv UL
+{
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 0px;
+    PADDING-BOTTOM: 0px;
+    MARGIN: 0px;
+    PADDING-TOP: 0px;
+    LIST-STYLE-TYPE: none
+}
+#mnuLadDiv LI
+{
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 0px;
+    PADDING-BOTTOM: 0px;
+    MARGIN: 0px;
+    PADDING-TOP: 8px
+}
+#mnuLadDiv LI.rdpe2
+{
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 0px;
+    PADDING-BOTTOM: 0px;
+    VERTICAL-ALIGN: middle;
+    PADDING-TOP: 0px
+}
+#mnuLadDiv A.nivel0
+{
+    PADDING-RIGHT: 0px;
+    BACKGROUND-POSITION: 0px 0ex;
+    PADDING-LEFT: 0px;
+    FONT-WEIGHT: bold;
+
+    PADDING-BOTTOM: 0px;
+    PADDING-TOP: 0px;
+    BACKGROUND-REPEAT: no-repeat
+}
+#mnuLadDiv A.nivel0:hover
+{
+    PADDING-RIGHT: 0px;
+    BACKGROUND-POSITION: 0px 0ex;
+    PADDING-LEFT: 0px;
+    FONT-WEIGHT: bold;
+    PADDING-BOTTOM: 0px;
+    PADDING-TOP: 0px;
+    BACKGROUND-REPEAT: no-repeat;
+    TEXT-DECORATION: none
+}
+#mnuLadDiv A.nivel1
+{
+    PADDING-RIGHT: 0px;
+    BACKGROUND-POSITION: left 3.2ex;
+    PADDING-LEFT: 14px;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 10px;
+    BACKGROUND-IMAGE: url(../_images/ico_nivel1.gif);
+    PADDING-BOTTOM: 0px;
+    MARGIN: 0px;
+    COLOR: #333333;
+    PADDING-TOP: 8px;
+    BACKGROUND-REPEAT: no-repeat;
+    FONT-FAMILY: Verdana, Arial
+}
+#mnuLadDiv A.nivel1:hover
+{
+    PADDING-RIGHT: 0px;
+    BACKGROUND-POSITION: left 3.2ex;
+    PADDING-LEFT: 14px;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 10px;
+    BACKGROUND-IMAGE: url(../_images/ico_nivel1.gif);
+    PADDING-BOTTOM: 0px;
+    MARGIN: 0px;
+    COLOR: #333333;
+    PADDING-TOP: 8px;
+    BACKGROUND-REPEAT: no-repeat;
+    FONT-FAMILY: Verdana, Arial;
+    TEXT-DECORATION: underline
+}
+#mnuLadDiv A.nivel3
+{
+    PADDING-RIGHT: 0px;
+    BACKGROUND-POSITION: left 1.5ex;
+    PADDING-LEFT: 14px;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 10px;
+    BACKGROUND-IMAGE: url(../_images/ico_nivel1.gif);
+    PADDING-BOTTOM: 0px;
+    MARGIN: 0px;
+    COLOR: #333333;
+    PADDING-TOP: 8px;
+    BACKGROUND-REPEAT: no-repeat;
+    FONT-FAMILY: Verdana, Arial
+}
+#mnuLadDiv A.nivel3:hover
+{
+    PADDING-RIGHT: 0px;
+    BACKGROUND-POSITION: left 1.5ex;
+    PADDING-LEFT: 14px;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 10px;
+    BACKGROUND-IMAGE: url(../_images/ico_nivel1.gif);
+    PADDING-BOTTOM: 0px;
+    MARGIN: 0px;
+    COLOR: #333333;
+    PADDING-TOP: 8px;
+    BACKGROUND-REPEAT: no-repeat;
+    FONT-FAMILY: Verdana, Arial;
+    TEXT-DECORATION: underline
+}
+#mnuLadDiv .seglinha
+{
+    PADDING-RIGHT: 0px;
+    BACKGROUND-POSITION: left center;
+    PADDING-LEFT: 14px;
+    BACKGROUND-IMAGE: url(../_images/space_menu.jpg);
+    PADDING-BOTTOM: 0px;
+    PADDING-TOP: 0px
+}
+A
+{
+    COLOR: #333333;
+    TEXT-DECORATION: none
+}
+A:visited
+{
+    TEXT-DECORATION: none
+}
+TD
+{
+    FONT-SIZE: 10px;
+    COLOR: #333333;
+    FONT-FAMILY: Verdana,Arial,Helvetica,sans-serif
+}
+#mnuLadDiv A.nivel2
+{
+    PADDING-RIGHT: 0px;
+    BACKGROUND-POSITION: left 1.5ex;
+    PADDING-LEFT: 14px;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 10px;
+    BACKGROUND-IMAGE: url(../_images/ico_nivel2.gif);
+    PADDING-BOTTOM: 0px;
+    MARGIN: 0px;
+    COLOR: #333333;
+    PADDING-TOP: 8px;
+    BACKGROUND-REPEAT: no-repeat;
+    FONT-FAMILY: Verdana, Arial;
+    TEXT-DECORATION: none
+}
+#mnuLadDiv A.nivel2:hover
+{
+    PADDING-RIGHT: 0px;
+    BACKGROUND-POSITION: left 2.5ex;
+    PADDING-LEFT: 14px;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 10px;
+    BACKGROUND-IMAGE: url(../_images/ico_nivel2.gif);
+    PADDING-BOTTOM: 0px;
+    MARGIN: 0px;
+    COLOR: #333333;
+    PADDING-TOP: 8px;
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: Verdana, Arial;
+    TEXT-DECORATION: underline
+}

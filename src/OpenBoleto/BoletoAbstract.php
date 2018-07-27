@@ -191,6 +191,8 @@ abstract class BoletoAbstract
      */
     protected $conta;
 
+    protected $codigoEntidade;
+
     /**
      * Dígito da conta
      * @var int
@@ -436,6 +438,12 @@ abstract class BoletoAbstract
         return $this;
     }
 
+    public function setCodigoEntidade($codigoEntidade)
+    {
+        $this->codigoEntidade = $codigoEntidade;
+        return $this;
+    }
+
     /**
      * Retorna o número da conta
      *
@@ -444,6 +452,11 @@ abstract class BoletoAbstract
     public function getConta()
     {
         return $this->conta;
+    }
+
+    public function getCodigoEntidade()
+    {
+        return $this->codigoEntidade;
     }
 
     /**
@@ -1304,7 +1317,6 @@ abstract class BoletoAbstract
         // Concatenates bankCode + currencyCode + first block of 5 characters and
         // calculates its check digit for part1.
         $check_digit = static::modulo10($this->getCodigoBanco() . $this->getMoeda() . $blocks['20-24']);
-
         // Shift in a dot on block 20-24 (5 characters) at its 2nd position.
         $blocks['20-24'] = substr_replace($blocks['20-24'], '.', 1, 0);
 
@@ -1318,6 +1330,7 @@ abstract class BoletoAbstract
         $part2 = $blocks['25-34'] . $check_digit;
         // Shift in a dot at its 6th position.
         $part2 = substr_replace($part2, '.', 5, 0);
+        dd($part1.' '.$part2);
 
         // Calculates part3 check digit from 3rd block of 10 characters.
         $check_digit = static::modulo10($blocks['35-44']);
@@ -1559,7 +1572,7 @@ abstract class BoletoAbstract
     {
         $fator = 2;
 
-        $soma  = 0;
+        $soma = 0;
         // Separacao dos numeros.
         for ($i = strlen($num); $i > 0; $i--) {
             //  Pega cada numero isoladamente.

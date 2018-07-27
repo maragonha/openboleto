@@ -1,0 +1,876 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>CAIXA - Contribuição Sindical</title>
+        <style type="text/css">
+            <?php include $resource_path . '/css/caixa.css' ?>
+            <?php include $resource_path . '/css/styles.css' ?>
+        </style>
+
+        <script language="JavaScript1.2">
+            function init() {
+                window.focus();
+            }
+        </script>
+    </head>
+
+    <body leftmargin="0" topmargin="0" bgcolor="#fff" marginheight="0" marginwidth="0">
+        <table border="0" cellpadding="0" cellspacing="0" width="650">
+            <tbody>
+                <tr>
+                    <td valign="top" width="12">
+                        <table border="0" cellpadding="0" cellspacing="0" height="540" width="12">
+                            <tbody>
+                                <tr>
+                                    <td nowrap="nowrap" valign="top" width="12"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/titViaContribuinte.gif')) ?>" height="103" hspace="0" vspace="60" width="12"></td>
+                                </tr>
+                                <tr>
+                                    <td nowrap="nowrap" height="513" valign="bottom" width="12"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/titViaDocumentoDoBanco.gif')) ?>" height="150" width="12"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td width="5">&nbsp;</td>
+                    <td valign="top">
+                        <table border="0" cellpadding="0" cellspacing="0" width="630">
+                            <tbody>
+                                <tr>
+                                    <td colspan="1" rowspan="2" class="fa11pbold">
+                                        <img src="<?php echo 'data:image/png;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/logosinditacok.png')); ?>" align="absmiddle" height="65" width="164"><br>
+                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/titDadosEntidadeSindical.gif')) ?>" height="10" hspace="0" vspace="2" width="160">
+                                    </td>
+                                    <td colspan="2" valign="bottom" class="fa11pbold"><br>
+                                        GRCSU<br>
+                                        Guia de Recolhimento da Contribuição Sindical Urbana
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table class="fa7p" align="right" border="0" cellpadding="0" cellspacing="0" width="140">
+                                            <tbody>
+                                                <tr>
+                                                    <td rowspan="2" width="1">
+                                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1">
+                                                    </td>
+                                                    <td class="fa7p" nowrap="nowrap" width="79">&nbsp;Vencimento</td>
+                                                    <td rowspan="2" width="1">
+                                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1">
+                                                    </td>
+                                                    <td class="fa7p" nowrap="nowrap" width="58">&nbsp;Exercício</td>
+                                                    <td rowspan="2" width="1">
+                                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fa7p">&nbsp;<span class="campo"><?php echo $data_vencimento ?></span></td>
+                                                    <td class="fa7p">&nbsp;<span class="campo"><?php echo $this->exercicio ?></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="5" bgcolor="#000000" height="1">
+                                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="1" width="140">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="5" height="3">
+                                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltTransparente.gif')) ?>" height="3" width="3">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="fa7p" border="0" cellpadding="0" cellspacing="0" width="630">
+                            <tbody>
+                                <tr>
+                                    <td class="fa7p" nowrap="nowrap" width="1">
+                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="14" width="1">
+                                    </td>
+                                    <td class="fa7p" nowrap="nowrap" width="449">&nbsp;Nome da Entidade</td>
+                                    <td class="fa7p" bgcolor="#000000" width="1">
+                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="14" width="1">
+                                    </td>
+                                    <td class="fa7p" nowrap="nowrap" width="178">&nbsp;Código da Entidade Sindical</td>
+                                    <td class="fa7p" bgcolor="#000000" nowrap="nowrap" width="1">
+                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="14" width="1">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="fa7p" width="1">
+                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="14" width="1">
+                                    </td>
+                                    <td class="fa7p" height="12" width="449">&nbsp;<?php echo $cedente ?></td>
+                                    <td class="fa7p" bgcolor="#000000" width="1">
+                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="14" width="1">
+                                    </td>
+                                    <td class="fa7p" width="181">&nbsp;<?php echo $this->codigoEntidade ?></td>
+                                    <td class="fa7p" bgcolor="#000000" width="1">
+                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="14" width="1">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="7" bgcolor="#000000" height="1">
+                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="1" width="630">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="7">
+                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltTransparente.gif')) ?>" height="3" width="3">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="fa7p" border="0" cellpadding="0" cellspacing="0" width="630">
+                            <tbody>
+                                <tr>
+                                    <td rowspan="2" bgcolor="#000000" nowrap="nowrap" width="1">
+                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1">
+                                    </td>
+                                    <td class="fa7p" nowrap="nowrap" width="250">&nbsp;Endereço</td>
+                                    <td rowspan="2" bgcolor="#000000" nowrap="nowrap" width="1">
+                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1">
+                                    </td>
+                                    <td class="fa7p" nowrap="nowrap" width="80">&nbsp;Número</td>
+                                    <td rowspan="2" bgcolor="#000000" nowrap="nowrap" width="1">
+                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1">
+                                    </td>
+                                    <td class="fa7p" nowrap="nowrap" width="117">&nbsp;Complemento</td>
+                                    <td rowspan="2" bgcolor="#000000" nowrap="nowrap" width="1">
+                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1">
+                                    </td>
+                                    <td class="fa7p" nowrap="nowrap" width="178">&nbsp;CNPJ da Entidade</td>
+                                    <td rowspan="2" bgcolor="#000000" nowrap="nowrap" width="1">
+                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="fa7p">&nbsp;<?php echo $cedente_endereco1 ?></td>
+                                    <td class="fa7p" width="80">&nbsp;<?php echo $numero ?></td>
+                                    <td class="fa7p" width="117">&nbsp;<?php echo $complemento ?></td>
+                                    <td class="fa7p" nowrap="nowrap" width="178">&nbsp;<?php echo $cedente_cpf_cnpj ?></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="9" bgcolor="#000000" height="1">
+                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="1" width="630">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="9">
+                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltTransparente.gif')) ?>" height="3" width="3">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="fa7p" border="0" cellpadding="0" cellspacing="0" width="630">
+                            <tbody>
+                                <tr>
+                                    <td rowspan="2" bgcolor="#000000" nowrap="nowrap" width="1">
+                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1">
+                                    </td>
+                                    <td class="fa7p" nowrap="nowrap" width="230">&nbsp;Bairro/Distrito</td>
+                                    <td rowspan="2" bgcolor="#000000" nowrap="nowrap" width="1">
+                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1">
+                                    </td>
+                                    <td class="fa7p" nowrap="nowrap" width="100">&nbsp;CEP</td>
+                                    <td rowspan="2" bgcolor="#000000" nowrap="nowrap" width="1">
+                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1">
+                                    </td>
+                                    <td class="fa7p" nowrap="nowrap" width="265">&nbsp;Cidade/Município</td>
+                                    <td rowspan="2" bgcolor="#000000" nowrap="nowrap" width="1">
+                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1">
+                                    </td>
+                                    <td class="fa7p" nowrap="nowrap" width="30">&nbsp;UF</td>
+                                    <td rowspan="2" bgcolor="#000000" nowrap="nowrap" width="1">
+                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="fa7p" width="250">&nbsp;<?php echo $bairro ?></td>
+                                    <td class="fa7p" width="70">&nbsp;<?php echo $cep ?></td>
+                                    <td class="fa7p" width="275">&nbsp;<?php echo $cidade ?></td>
+                                    <td class="fa7p" nowrap="nowrap" width="1">&nbsp;<?php echo $uf ?></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="9" bgcolor="#000000" height="1">
+                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="1" width="630">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="9">
+                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltTransparente.gif')) ?>" height="3" width="3">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="fa7p" border="0" cellpadding="0" cellspacing="0" width="630">
+                            <tbody>
+                                <tr>
+                                    <td rowspan="3" nowrap="nowrap" valign="bottom" width="1">
+                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1">
+                                    </td>
+                                    <td colspan="3" class="txtimpbold" nowrap="nowrap">
+                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/titDadosContribuinte.gif')) ?>" height="10" width="129">
+                                    </td>
+                                    <td rowspan="3" bgcolor="#000000" nowrap="nowrap" valign="bottom" width="1">
+                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="fa7p" nowrap="nowrap" width="469">&nbsp;Nome/Razão Social/Denominação Social</td>
+                                    <td rowspan="2" bgcolor="#000000" nowrap="nowrap" width="1">
+                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1">
+                                    </td>
+                                    <td class="fa7p" nowrap="nowrap" width="158">&nbsp;CPF/CNPJ/Código do Contribuinte</td>
+                                </tr>
+                                <tr>
+                                    <td class="fa7p" height="12" width="469">&nbsp;<?php echo $sacado ?></td>
+                                    <td class="fa7p" nowrap="nowrap" width="158">&nbsp;<?php echo $sacado_documento ?></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="5" bgcolor="#000000" height="1">
+                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="1" width="630">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="5">
+                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltTransparente.gif')) ?>" height="3" width="3">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="fa7p" border="0" cellpadding="0" cellspacing="0" width="630">
+                            <tbody>
+                                <tr>
+                                    <td rowspan="2" bgcolor="#000000" nowrap="nowrap" width="1">
+                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1">
+                                    </td>
+                                    <td class="fa7p" nowrap="nowrap" width="270">&nbsp;Endereço</td>
+                                    <td rowspan="2" bgcolor="#000000" nowrap="nowrap" width="1">
+                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1">
+                                    </td>
+                                    <td class="fa7p" nowrap="nowrap" width="50">&nbsp;Número</td>
+                                    <td rowspan="2" bgcolor="#000000" nowrap="nowrap" width="1">
+                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1">
+                                    </td>
+                                    <td class="fa7p" nowrap="nowrap" width="306">&nbsp;Complemento</td>
+                                    <td rowspan="2" bgcolor="#000000" nowrap="nowrap" width="1">
+                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="fa7p" width="250">&nbsp;<?php echo $sacado_endereco1 ?></td>
+                                    <td class="fa7p" width="70">&nbsp;<?php echo $sacado_numero ?></td>
+                                    <td class="fa7p" width="306">&nbsp;<?php echo $sacado_complemento ?></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="7" bgcolor="#000000" height="1">
+                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="1" width="630">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="7">
+                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltTransparente.gif')) ?>" height="3" width="3">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="fa7p" border="0" cellpadding="0" cellspacing="0" width="630">
+                            <tbody>
+                                <tr>
+                                    <td rowspan="2" bgcolor="#000000" nowrap="nowrap" width="1">
+                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1">
+                                    </td>
+                                    <td class="fa7p" nowrap="nowrap" width="80">&nbsp;CEP</td>
+                                    <td rowspan="2" bgcolor="#000000" nowrap="nowrap" width="1">
+                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1">
+                                    </td>
+                                    <td class="fa7p" nowrap="nowrap" width="240">&nbsp;Bairro/Distrito</td>
+                                    <td rowspan="2" bgcolor="#000000" nowrap="nowrap" width="1">
+                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1">
+                                    </td>
+                                    <td class="fa7p" nowrap="nowrap" width="184">&nbsp;Cidade/Município</td>
+                                    <td rowspan="2" bgcolor="#000000" nowrap="nowrap" width="1">
+                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1">
+                                    </td>
+                                    <td class="fa7p" nowrap="nowrap" width="30">&nbsp;UF</td>
+                                    <td rowspan="2" class="fa7p" bgcolor="#000000" nowrap="nowrap" width="1">
+                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1">
+                                    </td>
+                                    <td class="fa7p" nowrap="nowrap" width="90">&nbsp;Código Atividade</td>
+                                    <td rowspan="2" bgcolor="#000000" nowrap="nowrap" width="1">
+                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="fa7p" width="80">&nbsp;<?php echo $sacado_cep ?></td>
+                                    <td class="fa7p" width="240">&nbsp;<?php echo $sacado_bairro ?></td>
+                                    <td class="fa7p" width="184">&nbsp;<?php echo $sacado_cidade ?></td>
+                                    <td class="fa7p" nowrap="nowrap" width="30">&nbsp;<?php echo $sacado_uf ?></td>
+                                    <td class="fa7p" nowrap="nowrap" width="90">&nbsp;<?php echo $this->codigoCNAE ?></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="11" bgcolor="#000000" height="1">
+                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="1" width="630">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="11">
+                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltTransparente.gif')) ?>" height="3" width="3">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="fa7p" border="0" cellpadding="0" cellspacing="0" width="630">
+                            <tbody>
+                                <tr>
+                                    <td rowspan="3" nowrap="nowrap" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/transparente.gif')) ?>" height="1" width="1"></td>
+                                    <td class="txtimpbold" nowrap="nowrap" width="399"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/titDadosReferencia.gif')) ?>" height="10" width="214"></td>
+                                    <td nowrap="nowrap" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/transparente.gif')) ?>" height="1" width="1"></td>
+                                    <td class="txtimpbold" nowrap="nowrap" width="228"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/titDadosContribuicao.gif')) ?>" height="10" width="130"></td>
+                                    <td nowrap="nowrap" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/transparente.gif')) ?>" height="1" width="1"></td>
+                                </tr>
+                                <tr>
+                                    <td class="fa7p" nowrap="nowrap" width="399">&nbsp;Categoria</td>
+                                    <td rowspan="2" bgcolor="#000000" nowrap="nowrap" valign="bottom" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                    <td class="fa7p" nowrap="nowrap" width="228"> &nbsp;(=) Valor do Documento</td>
+                                    <td rowspan="2" bgcolor="#000000" nowrap="nowrap" valign="bottom" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                </tr>
+                                <tr>
+                                    <td class="fa7p" nowrap="nowrap" width="399">
+                                        &nbsp;<img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/icoSelecao.gif')) ?>" align="absmiddle" height="14" width="14">
+                                        &nbsp;Patronal/Empregador&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/icoSelecao.gif')) ?>" align="absmiddle" height="14" width="14">
+                                        &nbsp;Empregados&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/icoSelecao.gif')) ?>" align="absmiddle" height="14" width="14">
+                                        &nbsp;Prof. Liberal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/icoSelecaoCheck.gif')) ?>" align="absmiddle" height="14" width="14">
+                                        &nbsp;Autônomos
+                                    </td>
+                                    <td class="fa7p" nowrap="nowrap" width="228">&nbsp;R$ <?php echo $valor_documento ?></td>
+                                </tr>
+                                <tr>
+                                    <td nowrap="nowrap" height="1"></td>
+                                    <td class="fa7p" nowrap="nowrap" height="1"></td>
+                                    <td bgcolor="#000000" nowrap="nowrap" height="1"></td>
+                                    <td class="fa7p" bgcolor="#000000" nowrap="nowrap" height="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="1" width="228"></td>
+                                    <td bgcolor="#000000" nowrap="nowrap" height="1"></td>
+                                </tr>
+                                <tr>
+                                    <td nowrap="nowrap" height="1"></td>
+                                    <td colspan="3" class="fa7p" nowrap="nowrap"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltTransparente.gif')) ?>" height="3" width="3"></td>
+                                    <td nowrap="nowrap" height="1"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table width="630" border="0" cellpadding="0" cellspacing="0" class="fa7p">
+                            <tbody>
+                                <tr>
+                                    <td rowspan="2" bgcolor="#000000" nowrap="nowrap" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                    <td class="fa7p" nowrap="nowrap" width="210">&nbsp;Capital Social - Empresa</td>
+                                    <td rowspan="2" bgcolor="#000000" nowrap="nowrap" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                    <td class="fa7p" nowrap="nowrap" width="188">&nbsp;Nº Empregados Contribuintes</td>
+                                    <td rowspan="2" bgcolor="#000000" nowrap="nowrap" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                    <td class="fa7p" nowrap="nowrap">&nbsp;(+) Mora / Multa</td>
+                                    <td rowspan="2" bgcolor="#000000" nowrap="nowrap" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                </tr>
+                                <tr>
+                                    <td class="fa7p" width="210">&nbsp;</td>
+                                    <td class="fa7p" width="188">&nbsp;</td>
+                                    <td class="fa7p">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="7" bgcolor="#000000" height="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="1" width="630"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="7" height="3"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltTransparente.gif')) ?>" height="3" width="3"></td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2" bgcolor="#000000" nowrap="nowrap" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                    <td class="fa7p" width="210">&nbsp;Capital Social - Estabelecimento</td>
+                                    <td rowspan="2" bgcolor="#000000" nowrap="nowrap"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                    <td class="fa7p" width="188">&nbsp;Total Remuneração - Contribuintes</td>
+                                    <td rowspan="2" bgcolor="#000000" nowrap="nowrap"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                    <td class="fa7p">&nbsp;(+) Outros Acréscimos</td>
+                                    <td rowspan="2" bgcolor="#000000" nowrap="nowrap"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                </tr>
+                                <tr>
+                                    <td class="fa7p" width="210">&nbsp;</td>
+                                    <td class="fa7p" width="188">&nbsp;</td>
+                                    <td class="fa7p">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="7" bgcolor="#000000"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="1" width="630"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="7"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltTransparente.gif')) ?>" height="3" width="3"></td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2" bgcolor="#000000" nowrap="nowrap" valign="bottom" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                    <td class="fa7p" width="210">&nbsp;</td>
+                                    <td rowspan="2" bgcolor="#000000" nowrap="nowrap"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                    <td class="fa7p" width="188">&nbsp;Total Empregados - Estabelecimento</td>
+                                    <td rowspan="2" bgcolor="#000000" nowrap="nowrap" height="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                    <td class="fa7p">&nbsp;(=) Valor Cobrado</td>
+                                    <td rowspan="2" bgcolor="#000000" nowrap="nowrap"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                </tr>
+                                <tr>
+                                  <td class="fa7p">&nbsp;</td>
+                                  <td class="fa7p">&nbsp;</td>
+                                  <td class="fa7p">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="7" bgcolor="#000000" height="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="1" width="630"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="7" nowrap="nowrap" height="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltTransparente.gif')) ?>" height="3" width="3"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" width="630">
+                            <tbody>
+                                <tr>
+                                    <td class="fa11pbold" width="60"> <div align="center">104-0</div></td>
+                                    <td bgcolor="#000000" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="17" width="1"></td>
+                                    <td class="fa10p" width="568" style="font-weight:bold;font-size:16px; font-family:Arial, Helvetica, sans-serif;">&nbsp;<?php echo $linha_digitavel ?></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" class="fa11pbold" bgcolor="#000000"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="1" width="630"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" class="fa11pbold" height="3"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltTransparente.gif')) ?>" height="3" width="3"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="fa7p" border="0" cellpadding="0" cellspacing="0" width="630">
+                            <tbody>
+                                <tr>
+                                    <td rowspan="2" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                    <td class="fa7p" height="1" width="121">&nbsp;Código do Cedente</td>
+                                    <td rowspan="2" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                    <td class="fa7p" height="1" width="120">&nbsp;Nosso Número</td>
+                                    <td rowspan="2" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                    <td class="fa7p" height="1" width="141">&nbsp;Valor do Documento</td>
+                                    <td rowspan="2"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                    <td class="fa7p" height="1" width="144">&nbsp;Data Vencimento</td>
+                                    <td rowspan="2" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                    <td class="fa7p" height="1" width="98">&nbsp;Exercício</td>
+                                    <td rowspan="2" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                </tr>
+                                <tr>
+                                    <td class="fa7p" height="1" width="124">&nbsp;S-<?php echo $this->codigoEntidade ?></td>
+                                    <td class="fa7p" height="1" width="120">&nbsp;<?php echo $nosso_numero ?></td>
+                                    <td class="fa7p" height="1" width="141">&nbsp;&nbsp;R$ <?php echo $valor_documento ?></td>
+                                    <td class="fa7p" height="1" width="144">&nbsp;<span class="campo"><?php echo $data_vencimento ?></span></td>
+                                    <td class="fa7p" height="1" width="98">&nbsp;<span class="campo"><?php echo $this->exercicio ?></span></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="11"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="1" width="630"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="11"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltTransparente.gif')) ?>" height="3" width="3"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" width="630">
+                        <tbody>
+                            <tr>
+                                <td height="1" width="350">&nbsp;</td>
+                                <td bgcolor="#000000" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="35" width="1"></td>
+                                <td class="fa7p" valign="top" width="279">&nbsp;Autenticação Mecânica</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" width="630">
+                            <tbody>
+                                <tr>
+                                    <td height="10"><p><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPontilhado.gif')) ?>" height="7" width="630"></p></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltTransparente.gif')) ?>" height="1" width="1"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" width="630">
+                            <tbody>
+                                <tr>
+                                    <td width="100"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/lgoCaixaMenor2.gif')) ?>" height="21" width="92"></td>
+                                    <td class="fa7p" width="1">&nbsp;<br><br></td>
+                                    <td width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="29" width="1"></td>
+                                    <td width="40" align="center" valign="bottom" class="fa11pbold">104-0</td>
+                                    <td width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="29" width="1"></td>
+                                    <td width="490" valign="bottom" class="fa10p"  style="font-weight:bold;font-size:16px; font-family:Arial, Helvetica, sans-serif;">&nbsp;<?php echo $linha_digitavel ?></td>
+                                </tr>
+                                <tr bgcolor="#000000">
+                                    <td colspan="6" height="2"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="2" width="630"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltTransparente.gif')) ?>" height="2" width="1"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" width="630">
+                            <tbody>
+                                <tr>
+                                    <td valign="top">
+                                        <table class="fa7p" border="0" cellpadding="0" cellspacing="0" width="420">
+                                            <tbody>
+                                                <tr>
+                                                    <td rowspan="2" bgcolor="#000000" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                                    <td class="fa7p" width="420">&nbsp;Local de Pagamento</td>
+                                                    <td rowspan="2" bgcolor="#000000" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fa7p">&nbsp;PREFERENCIALMENTE NAS LOTERICAS  ATE O VENCIMENTO      </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3" bgcolor="#000000"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="1" width="420"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltTransparente.gif')) ?>" height="3" width="3"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="fa7p" border="0" cellpadding="0" cellspacing="0" width="420">
+                                            <tbody>
+                                                <tr>
+                                                    <td rowspan="2" bgcolor="#000000" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                                    <td class="fa7p" width="418">&nbsp;Cedente</td>
+                                                    <td rowspan="2" bgcolor="#000000" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fa7p">&nbsp;<?php echo $cedente ?></td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3" bgcolor="#000000"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="1" width="420"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltTransparente.gif')) ?>" height="3" width="3"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="fa7p" border="0" cellpadding="0" cellspacing="0" width="420">
+                                            <tbody>
+                                                <tr>
+                                                    <td rowspan="2" bgcolor="#000000" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                                    <td width="90" nowrap class="fa7p">&nbsp;Data do Documento</td>
+                                                    <td rowspan="2" bgcolor="#000000" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                                    <td width="130" nowrap class="fa7p">&nbsp;Número do Documento</td>
+                                                    <td rowspan="2" bgcolor="#000000" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                                    <td width="60" nowrap class="fa7p">&nbsp;Esp. Docum. </td>
+                                                    <td rowspan="2" bgcolor="#000000" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                                    <td class="fa7p" width="40">&nbsp;Aceite</td>
+                                                    <td rowspan="2" bgcolor="#000000" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                                    <td width="100" nowrap class="fa7p">&nbsp;Data Processamento</td>
+                                                    <td rowspan="2" bgcolor="#000000"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fa7p">&nbsp;<span class="campo"><?php echo $data_documento ?></span></td>
+                                                    <td class="fa7p">&nbsp;<span class="campo"><?php echo $this->exercicio ?></span><?php echo substr($nosso_numero, 1, 11) ?></td>
+                                                    <td width="60" nowrap class="fa7p">&nbsp;GRCSU</td>
+                                                    <td class="fa7p">&nbsp;</td>
+                                                    <td class="fa7p">&nbsp;<span class="campo"><?php echo $data_processamento ?></span></td>
+                                                </tr>
+                                                <tr bgcolor="#000000">
+                                                    <td colspan="11"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="1" width="420"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="11"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltTransparente.gif')) ?>" height="3" width="3"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="fa7p" border="0" cellpadding="0" cellspacing="0" width="420">
+                                            <tbody>
+                                                <tr>
+                                                    <td rowspan="2" bgcolor="#000000" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                                    <td rowspan="2" class="fa7p" bgcolor="#CCCCCC" width="87">&nbsp;Uso do Banco<br> &nbsp;EXERC (<span class="campo"><?php echo $this->exercicio ?></span>)</td>
+                                                    <td rowspan="2" bgcolor="#000000" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                                    <td class="fa7p" width="63">&nbsp;Carteira</td>
+                                                    <td rowspan="2" bgcolor="#000000" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                                    <td rowspan="2" class="fa7p" width="69">&nbsp;Espécie<br>&nbsp;<span class="campo">R$</span></td>
+                                                    <td rowspan="2" bgcolor="#000000" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                                    <td class="fa7p" width="88">&nbsp;Quantidade</td>
+                                                    <td rowspan="2" bgcolor="#000000" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                                    <td class="fa7p" width="107">&nbsp;Valor</td>
+                                                    <td rowspan="2" bgcolor="#000000" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fa7p">&nbsp;<span class="campo">SIND</span></td>
+                                                    <td>&nbsp;</td>
+                                                    <td class="fa7p">&nbsp;</td>
+                                                </tr>
+                                                <tr bgcolor="#000000">
+                                                    <td colspan="11"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="1" width="420"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="11"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltTransparente.gif')) ?>" height="3" width="3"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="fa7p" border="0" cellpadding="0" cellspacing="0" width="420">
+                                            <tbody>
+                                                <tr>
+                                                    <td rowspan="4" bgcolor="#000000" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="135" width="1"></td>
+                                                    <td class="fa7p" height="3" valign="top" width="418">&nbsp;Instruções (texto de responsabilidade do cedente):</td>
+                                                    <td rowspan="4" bgcolor="#000000"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="135" width="1"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fa7p" align="center" height="60" valign="top">
+                                                        <br>
+                                                        <?php echo $instrucoes ?>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="fa7p" align="left" height="30" valign="top">&nbsp;</td></tr><tr>
+                                                            <td class="fa7p" align="right" valign="bottom">PRT</td>
+                                                        </tr>
+                                                <tr>
+                                                    <td colspan="3" bgcolor="#000000"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="1" width="420"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltTransparente.gif')) ?>" height="3" width="1"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltTransparente.gif')) ?>" height="10" width="10"></td>
+                                    <td valign="top" width="250">
+                                        <table border="0" cellpadding="0" cellspacing="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td rowspan="2" bgcolor="#000000" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                                    <td class="fa7p" width="198">&nbsp;Vencimento</td>
+                                                    <td rowspan="2" bgcolor="#000000" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fa7p">&nbsp;<span class="campo"><?php echo $data_vencimento ?></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3" bgcolor="#000000" height="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="1" width="200"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3" height="3"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltTransparente.gif')) ?>" height="3" width="3"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="fa7p" border="0" cellpadding="0" cellspacing="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td rowspan="2" bgcolor="#000000" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                                    <td class="fa7p" width="198">&nbsp;Agência / Código Cedente</td>
+                                                    <td rowspan="2" bgcolor="#000000" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fa7p">&nbsp;<?php echo $this->agencia ?>/S-<?php echo $this->codigoEntidade ?></td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3" bgcolor="#000000" height="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="1" width="200"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3" height="3"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltTransparente.gif')) ?>" height="3" width="3"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="fa7p" border="0" cellpadding="0" cellspacing="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td rowspan="2" bgcolor="#000000" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                                    <td class="fa7p" width="198">&nbsp;Nosso Número</td>
+                                                    <td rowspan="2" bgcolor="#000000" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fa7p">&nbsp;<?php echo $nosso_numero ?></td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3" bgcolor="#000000" height="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="1" width="200"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3" height="3"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltTransparente.gif')) ?>" height="3" width="3"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="fa7p" border="0" cellpadding="0" cellspacing="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td rowspan="2" bgcolor="#000000" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                                    <td class="fa7p" width="198">&nbsp;(=) Valor do Documento</td>
+                                                    <td rowspan="2" bgcolor="#000000" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fa7p">&nbsp;R$ <?php echo $valor_documento ?></td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3" bgcolor="#000000" height="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="1" width="200"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3" height="3"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltTransparente.gif')) ?>" height="3" width="3"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="fa7p" border="0" cellpadding="0" cellspacing="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td rowspan="2" bgcolor="#000000" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                                    <td class="fa7p" width="198">&nbsp;(-) Desconto / Abatimento</td>
+                                                    <td rowspan="2" bgcolor="#000000" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fa7p">&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3" bgcolor="#000000" height="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="1" width="200"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3" height="3"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltTransparente.gif')) ?>" height="3" width="3"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="fa7p" border="0" cellpadding="0" cellspacing="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td rowspan="2" bgcolor="#000000" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                                    <td class="fa7p" width="198">&nbsp;(-) Outras Deduções</td>
+                                                    <td rowspan="2" bgcolor="#000000" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fa7p">&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3" bgcolor="#000000" height="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="1" width="200"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3" height="3"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltTransparente.gif')) ?>" height="3" width="3"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="fa7p" border="0" cellpadding="0" cellspacing="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td rowspan="2" bgcolor="#000000" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                                    <td class="fa7p" width="198">&nbsp;(+) Mora / Multa</td>
+                                                    <td rowspan="2" bgcolor="#000000" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fa7p">&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3" bgcolor="#000000" height="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="1" width="200"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3" height="3"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltTransparente.gif')) ?>" height="3" width="3"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="fa7p" border="0" cellpadding="0" cellspacing="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td rowspan="2" bgcolor="#000000" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                                    <td class="fa7p" width="198">&nbsp;(+) Outros Acréscimos</td>
+                                                    <td rowspan="2" bgcolor="#000000" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fa7p">&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3" bgcolor="#000000" height="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="1" width="200"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3" height="3"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltTransparente.gif')) ?>" height="3" width="3"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="fa7p" border="0" cellpadding="0" cellspacing="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td rowspan="2" bgcolor="#000000" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                                    <td class="fa7p" width="198">&nbsp;(=) Valor Cobrado</td>
+                                                    <td rowspan="2" bgcolor="#000000" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="26" width="1"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fa7p">&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3" bgcolor="#000000" height="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="1" width="200"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3" height="3"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltTransparente.gif')) ?>" height="3" width="3"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="fa7p" border="0" cellpadding="0" cellspacing="0" width="630">
+                            <tbody>
+                                <tr>
+                                    <td rowspan="2" bgcolor="#000000" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="41" width="1"></td>
+                                    <td width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltTransparente.gif')) ?>" height="15" width="1"></td>
+                                    <td class="fa7p" height="25" valign="top" width="628">
+                                        &nbsp;Sacado:<br>
+                                        &nbsp;<?php echo $sacado ?> <span style="float: right;">CPF: <?php echo $sacado_documento ?></span><br>
+                                        &nbsp;<?php echo $sacado_endereco1 ?>, <?php echo $sacado_numero ?>, - CEP <?php echo $sacado_cep ?> - <?php echo $sacado_bairro ?> - <?php echo $sacado_cidade ?> /<?php echo $sacado_uf ?>
+                                    </td>
+                                    <td width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltTransparente.gif')) ?>" height="15" width="1"></td>
+                                    <td rowspan="2" bgcolor="#000000" width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="41" width="1"></td>
+                                </tr>
+                                <tr>
+                                    <td width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltTransparente.gif')) ?>" height="15" width="1"></td>
+                                    <td class="fa7p" valign="bottom" width="628">&nbsp;Sacador / Avalista:&nbsp;</td>
+                                    <td width="1"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltTransparente.gif')) ?>" height="15" width="1"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="5" bgcolor="#000000"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPreto.gif')) ?>" height="1" width="630"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="5"><img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltTransparente.gif')) ?>" height="3" width="3"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="fa7p" border="0" cellpadding="0" cellspacing="0" width="630">
+                            <tbody>
+                                <tr>
+                                    <td class="fa7p" width="428">&nbsp;Código de Barras</td>
+                                    <td class="fa7p" align="right" width="300"><p>Ficha de Compensação / Autenticação Mecânica</p></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="fa7p" border="0" cellpadding="0" cellspacing="0" width="630">
+                            <tbody>
+                                <tr>
+                                    <td nowrap="nowrap" width="630">
+                                        <tr>
+                                            <td colspan="8" class="noborder">
+                                                <?php echo $codigo_barras ?>
+                                            </td>
+                                        </tr>
+                                    </td>
+                                    <td>
+                                        <img src="<?php echo 'data:image/gif;base64,'.base64_encode(file_get_contents($this->getResourcePath().'/images/dltPontilhadoTesoura.gif')) ?>" width="630">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="fa7p" border="0" cellpadding="0" cellspacing="0" width="630">
+                            <tbody>
+                                <tr>
+                                    <td nowrap="nowrap" width="630">
+                                        <tr>
+                                            <td colspan="8" class="noborder">
+                                                <br><br>
+                                                <?php echo $informations ?>
+                                            </td>
+                                        </tr>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

@@ -27,7 +27,7 @@
 
 namespace OpenBoleto\Banco;
 
-use OpenBoleto\BoletoAbstract;
+use OpenBoleto\BoletoAbstractSIND;
 use OpenBoleto\Exception;
 use OpenBoleto\Agente;
 
@@ -40,7 +40,7 @@ use OpenBoleto\Agente;
  * @license    MIT License
  * @version    1.0
  */
-class Caixa extends BoletoAbstract
+class Caixa extends BoletoAbstractSIND
 {
     /**
      * Código do banco

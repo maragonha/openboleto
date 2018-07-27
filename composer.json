@@ -1,14 +1,14 @@
 {
-    "name": "michaelacost/openboleto",
+    "name": "kriansa/openboleto",
     "type": "library",
     "description": "Biblioteca para geração de boletos bancários.",
     "keywords": ["boleto", "boleto bancario"],
-    "homepage": "https://github.com/michaelacost/openboleto",
+    "homepage": "http://github.com/kriansa/openboleto",
     "license": "MIT",
     "authors": [
         {
-            "name": "Michael Acosta",
-            "email": "michaelacosta95@gmail.com"
+            "name": "Daniel Garajau",
+            "email": "kriansa@facebook.com"
         }
     ],
     "require": {
