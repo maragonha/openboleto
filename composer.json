@@ -1,9 +1,9 @@
 {
-    "name": "kriansa/openboleto",
+    "name": "maragonha/openboleto",
     "type": "library",
     "description": "Biblioteca para geração de boletos bancários.",
     "keywords": ["boleto", "boleto bancario"],
-    "homepage": "http://github.com/kriansa/openboleto",
+    "homepage": "http://github.com/maragonha/openboleto",
     "license": "MIT",
     "authors": [
         {
